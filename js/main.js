@@ -1,0 +1,1 @@
+import{initRemoveClassNojs}from"./remove-class-nojs.js";initRemoveClassNojs();
