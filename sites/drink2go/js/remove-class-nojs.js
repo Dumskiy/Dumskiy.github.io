@@ -1,0 +1,1 @@
+const ELEMENTS=["header__navigation-site","header__toggle","map__interactive","map__image"];export const initRemoveClassNojs=()=>{removeClassNojs(ELEMENTS)};const removeClassNojs=e=>{e.forEach((e=>{document.querySelectorAll(`.${e}--nojs`).forEach((o=>{o.classList.remove(`${e}--nojs`)}))}))};
