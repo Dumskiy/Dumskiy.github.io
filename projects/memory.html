@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Dumskiy</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../img/favicon/favicon-apple.png">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="preload" href="../fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../vendor/bootstrap/bootstrap.min.css" as="style">
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="page__body page__body--white">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__navigation">
+          <a href="../projects.html" class="header__link header__link--black header__link--memory">
+            <span>проекты</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <section class="hero">
+          <div class="hero__container">
+            <h1 class="hero__title">
+              <span>Memory</span>
+            </h1>
+            <p class="hero__tagline">
+              <span>Играй в игру и тренируй память</span>
+            </p>
+            <!-- <div class="hero__image-wrapper">
+              <picture>
+                <source type="image/webp"
+                  srcset="../img/cat-energy-hero@1x.webp 1x, ../img/cat-energy-hero@2x.webp 2x">
+                <img class="hero__image" src="../img/cat-energy-hero@1x.jpg"
+                  srcset="../img/cat-energy-hero@2x.jpg 2x" width="1440" height="952" alt="Проект Кэт Энерджи.">
+              </picture>
+            </div> -->
+          </div>
+        </section>
+        <section class="project">
+          <div class="project__container">
+            <h2 class="project__title">О проекте</h2>
+            <p class="project__description">
+              Memory - это игра для тренировки визуальной памяти. В наборе есть множество карточек – по две штуки с одним и тем же рисунком. Нужно разложить карточки «рубашкой» вверх на столе, а затем переворачивать по две. Если они совпадают – игрок забирает их и получает ещё один ход.
+            </p>
+            <a class="project__link project__link--site" href="https://dumskiy-game-memory.netlify.app/" target="_blank">Сайт Memory</a>
+            <a class="project__link project__link--github" href="https://github.com/Dumskiy/memory" target="_blank">Репозиторий на GitHub</a>
+            <h2 class="project__title">Техническая реализация</h2>
+            <!-- <h3 class="project__subtitle">Общая информация</h3>
+            <p class="project__text">
+              Сайт представляет собой совокупность трех страниц: главной, каталога и страницы подбора программы питания.
+            </p> -->
+            <p class="project__text">
+              <strong>Стек:</strong> React, JavaScript, Webpack, Sass (SCSS).
+            </p>
+            <!-- <h3 class="project__subtitle">Адаптивная верстка</h3>
+            <p class="project__text">
+              Для каждой страницы выполнена фиксированная верстка трёх состояний: мобильная, планшетная и десктопная.
+            </p>
+            <div class="project__slider project__slider--nojs slider carousel slide" id="carouselExampleIndicators" data-bs-ride="true">
+              <div class="slider__indicators carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="slider__inner carousel-inner">
+                <div class="slider__item carousel-item active">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/cat-energy-devices-index@1x.webp 1x, ../img/cat-energy-devices-index@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/cat-energy-devices-index@1x.png"
+                      srcset="../img/cat-energy-devices-index@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Главная страница Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+                <div class="slider__item carousel-item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/cat-energy-devices-catalog@1x.webp 1x, ../img/cat-energy-devices-catalog@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/cat-energy-devices-catalog@1x.png"
+                      srcset="../img/cat-energy-devices-catalog@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Страница каталога Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+                <div class="slider__item carousel-item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/cat-energy-devices-form@1x.webp 1x, ../img/cat-energy-devices-form@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/cat-energy-devices-form@1x.png"
+                      srcset="../img/cat-energy-devices-form@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Страница подбора программы Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+              </div>
+              <button class="slider__button slider__button--prev carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="slider__button slider__button--next carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-devices-index@1x.webp 1x, ../img/cat-energy-devices-index@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/cat-energy-devices-index@1x.png"
+                srcset="../img/cat-energy-devices-index@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Главная страница Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+            </picture>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-devices-catalog@1x.webp 1x, ../img/cat-energy-devices-catalog@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/cat-energy-devices-catalog@1x.png"
+                srcset="../img/cat-energy-devices-catalog@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Страница каталога Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+            </picture>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-devices-form@1x.webp 1x, ../img/cat-energy-devices-form@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/cat-energy-devices-form@1x.png"
+                srcset="../img/cat-energy-devices-form@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Страница подбора программы Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+            </picture>
+            <h3 class="project__subtitle">Разметка и Стилизация</h3>
+            <p class="project__text">
+              Семантическая разметка страниц выполнена на HTML5 с применением методологии БЭМ, и отвечает критериям валидности и доступности.
+            </p>
+            <p class="project__text">
+              Стилизация страниц выполнена на CSS3 c использованием препроцессора Sass (синтаксис SCSS).
+            </p>
+            <h3 class="project__subtitle">Сетки страниц и компонентов</h3>
+            <p class="project__text">
+              Сетки крупных структурных блоков и мелких компонентов построены при помощи Flexbox и Grid Layout, не боятся переполнения контентом, и перестраиваются в зависимости от разрешения экрана устройства пользователя.
+            </p>
+            <h3 class="project__subtitle">Адаптивная графика</h3>
+            <p class="project__text">
+              Выполнено кадрирование контентных изображений для загрузки определенных изображений в зависимости от разрешения экрана устройства пользователя.
+            </p>
+            <p class="project__text">
+              Растровая графика в проекте подготовлена для двух вариантов экранов: с обычной и двойной плотностью пикселей.
+            </p>
+            <h3 class="project__subtitle">Интерактивные карты</h3>
+            <p class="project__text">
+              Интерактивные карты в проекте реализованы с использованием Google Maps API.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-mobile-map@1x.webp 1x, ../img/cat-energy-mobile-map@2x.webp 2x">
+              <img class="project__image project__image--xs" src="../img/cat-energy-mobile-map@1x.png"
+                srcset="../img/cat-energy-mobile-map@2x.png 2x" width="356" height="725" loading="lazy" alt="Интерактивная карта на сайте Кэт Энерджи.">
+            </picture>
+            <p class="project__text">
+              На случай отказа работоспособности JavaScript предусмотрено отображение изображения карты.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-mobile-map-nojs@1x.webp 1x, ../img/cat-energy-mobile-map-nojs@2x.webp 2x">
+              <img class="project__image project__image--xs" src="../img/cat-energy-mobile-map-nojs@1x.png"
+                srcset="../img/cat-energy-mobile-map-nojs@2x.png 2x" width="356" height="725" loading="lazy" alt="Изображение карты на сайте Кэт Энерджи.">
+            </picture>
+            <h3 class="project__subtitle">Мобильное меню</h3>
+            <p class="project__text">
+              Мобильное меню реализовано с использованием нативного JavaScript, и работает по класической схеме: по клику на бургер - открывается, на крестик - закрывается.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-mobile-menu@1x.webp 1x, ../img/cat-energy-mobile-menu@2x.webp 2x">
+              <img class="project__image project__image--s" src="../img/cat-energy-mobile-menu@1x.png"
+                srcset="../img/cat-energy-mobile-menu@2x.png 2x" width="812" height="725" loading="lazy" alt="Мобильное меню на сайте Кэт Энерджи. Слева закрытое, справа открытое">
+            </picture>
+            <p class="project__text">
+              На случай отказа работоспособности JavaScript предусмотрено статическое отображение мобильного меню в открытом состоянии.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-mobile-menu-nojs@1x.webp 1x, ../img/cat-energy-mobile-menu-nojs@2x.webp 2x">
+              <img class="project__image project__image--xs" src="../img/cat-energy-mobile-menu-nojs@1x.png"
+                srcset="../img/cat-energy-mobile-menu-nojs@2x.png 2x" width="356" height="725" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <h3 class="project__subtitle">Оптимизация</h3>
+            <p class="project__text">
+              Для браузеров, поддерживающих формат WebP, в проекте подготовлены контентные изображения в данном формате.
+            </p>
+            <p class="project__text">
+              Векторные изображения на странице объединены в спрайт.
+            </p>
+            <p class="project__text">
+              Реализована предзагрузка шрифтов и ленивая загрузка изображений.
+            </p>
+            <h3 class="project__subtitle">Кроссбраузерность</h3>
+            <p class="project__text">
+              Все страницы и элементы сайта идентично отображаются в последних версиях браузеров Chrome, Firefox, Safari.
+            </p> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>
