@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ВАШ БУКЕТиК</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Каталог</a>
+        </li>
+        <li class="navigation__item">
+          <a href="" class="navigation__link">Доставка</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">О нас</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#contacts" class="navigation__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="sr-only">Ваш букетик</h1>
+      <a href="#popular" class="hero__link">Каталог</a>
+    </section>
+    <section id="about" class="about container">
+      <img class="about__image" src="./images/dog.webp" srcset="./images/dog@2x.webp 2x" alt="">
+      <div>
+        <h2 class="title">О нас</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta debitis reiciendis dignissimos quasi commodi minima.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta debitis reiciendis dignissimos quasi commodi minima.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta debitis reiciendis dignissimos quasi commodi minima.
+        </p>
+      </div>
+    </section>
+    <section id="popular" class="popular container">
+      <h2 class="title">Популярные</h2>
+      <div class="popular__slider slider">
+        <ul class="slider__list">
+          <li class="slider__item card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./images/flowers-1.png" srcset="./images/flowers-1@2x.png 2x" alt="">
+            </div>
+            <h3 class="card__title">Lorem, ipsum.</h3>
+            <p class="card__descr">7 346 ₽</p>
+          </li>
+          <li class="slider__item card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./images/flowers-2.png" srcset="./images/flowers-2@2x.png 2x" alt="">
+            </div>
+            <h3 class="card__title">Lorem, ipsum.</h3>
+            <p class="card__descr">7 346 ₽</p>
+          </li>
+          <li class="slider__item card">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="./images/flowers-3.png" srcset="./images/flowers-3@2x.png 2x" alt="">
+            </div>
+            <h3 class="card__title">Lorem, ipsum.</h3>
+            <p class="card__descr">7 346 ₽</p>
+          </li>
+        </ul>
+        <button class="slider__button slider__button--prev">
+          <span class="sr-only">Предыдущий слайд</span>
+        </button>
+        <button class="slider__button slider__button--next">
+          <span class="sr-only">Следующий слайд</span>
+        </button>
+      </div>
+      <a class="popular__link" href="">Cмотреть всё</a>
+    </section>
+    <section id="contacts" class="contacts container">
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f19619f47c8114530145650b6622caff2be5fe31d0e050fd23e4abe0595c922&amp;source=constructor" width="100%" height="468" frameborder="0"></iframe>
+      </div>
+      <div>
+        <h2 class="title">Контакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3>наш адрес</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="contacts__item">
+            <h3>свяжитесь с нами</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="contacts__item">
+            <h3>часы работы</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </li>
+          <li class="contacts__item">
+            <h3>мы в социальных сетях</h3>
+            <div class="contacts__socials">
+              <a href="" target="_blank">
+                <img src="./images/icon-vk.svg" alt="">
+                <span class="sr-only">ВКонтакте.</span>
+              </a>
+              <a href="" target="_blank">
+                <img src="./images/icon-wa.svg" alt="">
+                <span class="sr-only">Ватс Апп.</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
